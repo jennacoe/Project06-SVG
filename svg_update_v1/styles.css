@@ -46,6 +46,35 @@ header {
     line-height: 1em;
   }
 
+#paw-logo {
+  width: 140px;
+  height: 120px;
+}
+
+#paw-header {
+  color: #eaaa7f;
+}
+
+.text {
+  display: none;
+}
+
+#heart {
+  height: 13px;
+}
+
+#map {
+  height: 14px;
+}
+
+#bubble {
+  height: 13px;
+}
+
+.heart-icon:hover, .map-icon:hover, .bubble-icon:hover {
+  fill: #111;
+}
+
 main {
   padding-top: 50px;
 }
@@ -62,6 +91,7 @@ main {
     }
       main li img {
         margin-bottom: 15px;
+        width: 170px;
       }
       main li span {
         margin-left: -40px;
@@ -76,3 +106,14 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+
+@media (min-width: 420px) {
+  .text {
+    display: block;
+  }
+  #paw-header {
+    display: none;
+  }
+}
+
+
