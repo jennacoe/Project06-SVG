@@ -71,34 +71,98 @@ header {
   height: 13px;
 }
 
-.heart-icon:hover, .map-icon:hover, .bubble-icon:hover {
-  fill: #111;
+.heart-icon, .map-icon, .bubble-icon {
+  fill: #39ADD1;
+  transition: transform .4s ease-out;
 }
 
+.heart-icon:hover, .map-icon:hover, .bubble-icon:hover {
+  fill: #111;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+}
+
+.circle {
+  fill: #BA8058;
+}
+
+.text {
+  fill: #EAAA7F;
+}
+
+.paw {
+  fill: #F4C6A6;
+}
+
+.nose-eyes {
+  fill: #2D3339;
+}
+
+.muzzle {
+  fill: #FBFEFF;
+}
+
+#blacktan-dog .ears-eyebrows {
+  fill: #BA8058;
+}
+
+#blacktan-dog .coat {
+  fill: #52595F; 
+}
+          
+#fawn-dog .coat {
+  fill: #EAAA7F;
+}
+
+#fawn-dog .eyebrows {
+  fill: #F4C6A6;
+}
+
+#red-dog .coat {
+  fill: #BA8058;
+}
+
+#red-dog .eyebrows {
+  fill: #EAAA7F;
+}
+
+#sable-dog .coat {
+  fill: #844B24;
+}
+
+#sable-dog .eyebrows {
+  fill: #BA8058;
+}
+            
 main {
   padding-top: 50px;
 }
+  main li {
+    display: inline-block;
+    color: #ba8058;
+    margin-right: 20px;
+  } 
+  main li svg {
+    width: 170px;
+    height: 170px;
+  } 
   main h2 {
-  font-size: 28px;
-}
+    font-size: 28px;
+  }
   main ul {
     padding: 0;
   }
-    main li {
-      display: inline-block;
-      color: #ba8058;
-      margin-right: 20px;
-    }
-      main li img {
-        margin-bottom: 15px;
-        width: 170px;
-      }
-      main li span {
-        margin-left: -40px;
-      }
-      main li:last-child {
-        margin-right: 0;
-      }
+  main li img {
+    margin-bottom: 15px;
+    width: 170px;
+  }
+  main li span {
+    margin-left: -40px;
+  }
+  main li:last-child {
+    margin-right: 0;
+  }
 
 footer {
   width: 100%;
